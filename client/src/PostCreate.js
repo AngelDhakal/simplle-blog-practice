@@ -9,12 +9,13 @@ export default () => {
       title,
     });
     setTitle("");
+    window.location = "/";
   };
   return (
     <div>
       <form method="post" onSubmit={submitPost}>
         <div className="form-group">
-          <label>Title</label>
+          <label> Title </label>
           <input
             type="text"
             className="form-control"
@@ -22,7 +23,7 @@ export default () => {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <button className="btn btn-primary">Submit</button>
+        <button className="btn btn-primary"> Submit </button>
       </form>
     </div>
   );
